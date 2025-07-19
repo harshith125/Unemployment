@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter or Interviewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script>
+        function onRecruiterButtonClick() {
+            var designation = prompt("Enter Candidate designation:");
+            var experience = prompt("Enter experience of the required Candidate:");
+            var gender = prompt("Enter Gender of the required candidate:");
+            var package = prompt("Enter the Estimated Package for Employee:");
+            if (experience !== null && designation !== null) {
+                // Here you can send the data to a server using AJAX or perform any other action
+                alert("Experience: " + experience + "\nDesignation: " + designation + "\nGender: " + gender + "\nEstimated package: " + package + "\nData saved successfully!");
+            }
+        }
+
+        function onInterviewerButtonClick() {
+            var name = prompt("Enter Your Name:");
+            var university = prompt("Enter your University Name:");
+            var skills = prompt("Enter your Skills:");
+            var role = prompt("Enter the role you applied for:");
+            var cgpa = prompt("Enter your CGPA:");
+            var mail = prompt("Your Mail Id:");
+            var mobileNumber = prompt("Enter Your Mobile Number:");
+            var package1 = prompt("Enter Expecting Package:");
+            if (name !== null && university !== null && skills !== null && role !== null && cgpa !== null && mail !== null && mobileNumber !== null) {
+                // Here you can send the data to a server using AJAX or perform any other action
+                alert("Name: " + name + "\nUniversity Name: " + university + "\nSkills: " + skills + "\nRole Applied For: " + role + "\nCGPA: " + cgpa + "\nMail ID: " + mail + "\nMobile Number: " + mobileNumber + "\nPackage: " + package1 + "\nData saved successfully!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Recruiter or Interviewer</h1>
+    <button onclick="onRecruiterButtonClick()">Recruiter</button>
+    <button onclick="onInterviewerButtonClick()">Interviewer</button>
+</body>
+</html>
